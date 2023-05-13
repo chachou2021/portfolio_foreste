@@ -1,0 +1,678 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+   /* font-family: sans-serif,Arial, Helvetica, sans-serif; */
+   font-family:Abril Fatface;
+    font-weight: 500;
+    background-color: rgb(236, 239, 245);
+
+}
+/* =================HEADER ============================*/
+header{
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    position:fixed; /*absolute */
+    display: block; 
+    z-index: 999;
+    box-shadow:  0 16px 28px 0 rgba(0, 0, 0, 0.15);
+    padding-top: 0;
+    
+}
+
+.info{
+    width: 100%;
+    height: 50px;
+   /* background-color: rgb(4, 43, 100); */
+    background-color: #fff;
+  
+    
+}
+.info ul{
+    float: right;
+    margin-right: 10px; 
+   
+
+}
+.info ul li{
+    display: inline-block;
+    padding: 0 20px 0 0;
+    text-decoration: none;
+
+    
+}
+
+
+
+.info ul li a .lien{
+   
+    padding: 0 10px 0 0;
+    
+  }
+.info .btn{
+  color:cadetblue;
+  border: 2px solid #fff;
+  padding: 0;
+  border-radius: 20px;
+  margin-top: 5px;
+  width: 150px;
+  height:35px;
+  padding-top: 3px;
+  background-color: #fff;
+  }
+
+  .info .btn:hover{
+      background-color: cadetblue;
+      color: #fff;
+
+  }
+
+.info ul li a{
+    color:  rgb(4, 43, 100); 
+  font-size: 15px;
+  text-decoration: none;
+  
+}
+
+
+
+nav{
+    background-color:transparent;
+        width: 100%;
+        height: 50px;
+       display: flex;
+       margin-top: 0;
+       position: relative;
+     
+
+}     
+
+
+.logo{
+   
+    color: #fff;
+    width:250px;
+    margin-left: 40px;
+    margin-top: 10pxs;
+    
+}
+
+
+
+.menu{
+  /*  background-color: greenyellow; */
+    width: 100%;
+    
+}
+.menu ul{
+    float: right;
+    margin-right: 50px;
+}
+.menu ul li{
+    display: inline-block;
+    padding: 0 25px 0 0;
+    
+}
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu ul li a.home{
+    
+    color: cadetblue;
+    border-radius: 20px;
+    outline: none;
+    width: 25px;
+    height: 15px;
+}
+.menu ul li a:hover{
+    border-bottom: 5px solid cadetblue;
+    background-color:  rgba(0, 0, 0, 0.10);
+    color: cadetblue;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.menu ul .social{
+    display: none;
+}
+
+
+
+
+
+.icon{
+background-color: transparent;
+opacity: 0;
+}
+.icon2{
+    background-color: transparent;
+    opacity: 0;
+}
+
+  /* ================= MEDIA QUERRY ============================*/
+@media (max-width: 950px) {
+    header{
+        position: fixed;
+        z-index: 999;
+       background-color: rgb(4, 43, 100);
+       margin-top: 0;
+       
+    }
+
+
+    nav{
+        margin-top: 0;
+        position: absolute;
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        display: flex;
+        transition: ease-in-out 0.9s;
+        z-index: 999;
+      
+        
+    
+    }
+
+.icon{
+    display: block;
+    cursor: pointer;
+    color:#fff;
+    margin-right: 30px;
+    font-size: 30px;
+    opacity: 1;
+    display: block;
+}
+
+.icon2{
+    display: none;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 30px;
+    font-size: 30px;
+   display:none;
+   opacity: 1;
+}
+
+.info .mail{
+    display: none;
+}
+.info .social{
+    display: none;
+   
+}
+
+
+
+
+
+.info .tel{
+    display: none;
+}
+ .menu ul{
+    box-shadow:  1px 16px 28px 16px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    margin-top: 55px;
+    transition: ease-in-out 0.9s;
+    display:block; 
+    text-align: center;
+    border-radius: 5px;
+    background-color: #fff;
+    padding-bottom: 25px;
+    
+
+ }
+
+ .menu ul .social{
+    display: none;
+}
+.menu ul li{
+     display: block;
+    padding-top: 30px;
+    transition: ease-in-out 0.9s;
+}
+
+.menu ul li a{
+ color: #000;
+
+}
+
+nav ul li:hover a{
+   color:cadetblue;
+  
+
+   }
+   
+.section{
+ width: auto;
+ height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+ 
+       
+   }
+
+
+  
+  
+
+   
+}
+
+  /* ================= BANNER ============================*/
+
+  .section{
+    width: 100%;
+    height: 85vh; 
+    /*box-sizing: border-box; */
+    /*box-shadow: 10px 10px 15px rgb(173, 165, 165); */
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+   /* padding-top: 5rem; */
+ 
+  
+    
+}
+
+.section >img{
+  height: auto;
+  width: auto;
+  background-blend-mode: darken;
+
+  
+}
+ .text-banner{
+
+    display: block;
+    position: relative;
+    background-color: #fff;
+    color: rgb(4, 43, 100);
+    width: 60%;
+    height:250px auto;
+    top: -70px;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow:  0 18px 28px 0 rgba(0, 0, 0, 0.15); 
+    text-align: center;
+   
+
+
+    
+}
+.text-banner .wrapper{
+
+color: #000;
+text-align: center;
+ 
+}
+
+@media (max-width: 950px) {
+    .text-banner{
+    
+        top: -90px;
+        padding: 10px;
+    }
+
+}
+
+ 
+
+  /* ================= BANNER FLOAT ============================*/
+/*
+.bg-01{
+  /*  background-color: cadetblue; 
+    position: relative;
+    margin-top: -7rem;
+}
+.bg-01 .wrapper{
+    position: relative;
+    background-color: #fff;
+    padding: 2.5rem 2.5rem;
+    box-shadow:  0 16px 28px 0 rgba(0, 0, 0, 0.15);
+    
+}
+
+.bg-01 .wrapper .content{
+   display: block;
+  
+   position: relative;
+
+}
+
+.bg-01 .wrapper .content .dashe{
+    border-right: 1px dashed #000;
+}
+
+.bg-01 .wrapper .content  i{
+ color: rgb(4, 43, 100);
+ font-size: 40px;
+}
+  /* =================ABOUT ============================*/
+
+.bg-02{
+
+     width: 100%;
+     height: 100%;
+     background-color: rgb(236, 239, 245); 
+     padding-top: 80px;
+    
+   
+  }
+
+ /*.bg-02 h1{
+  
+     color: rgb(153, 147, 147);
+     background-color:  rgb(4, 43, 100);
+     border-radius:3px;
+     width: 200px;
+
+ } */
+
+  .bg-02 .container{
+      margin-top: 60px;
+      padding-top: 60px;
+      width: 100%;
+      height: auto;
+      background-color: #fff; 
+      color: #fff;
+      padding-bottom: 20px;
+      border-radius: 10px;
+  }
+  .bg-02 .container:hover{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+
+  }
+
+  .container-item{ 
+    width: 100%;
+
+
+  }
+
+  
+  .container-item  h2{ 
+    margin-bottom: 50px;
+    width: 100%;
+    color: rgb(4, 43, 100);
+
+  }
+ 
+  .container-item .card01{
+   width:100%;
+   height: auto;
+   border: none;
+   background-color: #fff;
+  
+   
+  }
+
+  .container-item .cardphoto{
+      
+      padding: 15px 0 15px 0;
+      
+     
+      
+  }
+
+  .container-item .cardphoto > img{
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    
+
+    
+  }
+  .container-item .cardtext{
+    background-color:#fff; 
+    height: auto;
+    color: #000;
+    height: auto;
+  }
+  
+  .container-item .skill{
+
+    background-color: rgb(4, 43, 100);
+    padding: 25px 5px 35px 5px;
+    border-radius: 5px;
+  }
+  .bg-02 .btn{
+  
+      width: auto;
+    
+   
+      
+  }
+  .bg-02 button{
+      background-color: grey;
+      width: 50px;
+      height: 30px;
+      outline: none;
+      border-radius: 20px;
+      position: absolute;
+      display: inline-block;
+      z-index: 99;
+      top: 50%;
+      
+      
+
+  }
+.carousel-control-next{
+    float: right;
+   
+}
+.carousel-control-prev{
+    float: left;
+}
+
+/*====================BG3================================*/
+
+
+
+.bg-03{
+   
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 30px;
+   justify-content: center;
+}
+.bg-03 .content-btn{
+    
+    justify-content: space-between;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    
+}
+
+.bg-03 .content-btn .btn{
+
+    color:rgb(4, 43, 100);
+    background-color: #fff;
+    margin-bottom: 17px;
+    margin-right: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); 
+
+}
+
+
+
+.bg-03 .content-btn .btn:hover:active{
+    background-color:rgb(4, 43, 100);
+    color: #fff;
+}
+
+
+.bg-03 .box-item .item{
+ 
+  background-color: black;
+}
+
+.bg-03 .box-item .box{
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 20px;
+
+  }
+
+  .bg-03 .box-item .box:hover{
+
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+
+
+/*====================BG4  blog================================*/
+
+.bg-04{
+       background-color: rgb(236, 239, 245);
+       width: 100%;
+       padding-top: 100px;
+       
+}
+.bg-04 .blog-container {
+   
+   
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+.bg-04 .blog-container .blog-title{
+  
+    justify-content: center;
+    width:auto;
+    color: rgb(4, 43, 100);
+}
+
+.bg-04 .blog-container .blog-title  h1{
+    color: rgb(4, 43, 100);
+   text-align: center;
+   padding: 40px;
+}
+
+.bg-04 .blog-container .news-row{
+    justify-content: center;
+ 
+    padding: 50px 0 30px 50px;
+    
+}
+.bg-04 .blog-container .news-row .card{
+    border: 0;
+    background-color: #fff;
+   
+}
+
+.bg-04 .blog-container .news-row .card:hover{
+    color: #fff;
+    background-color: rgb(4, 43, 100);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); 
+}
+
+.bg-04 .blog-container .news-row .card .image{
+    padding-left: 10px;
+    padding-top: 25px;
+    
+}
+
+   
+ 
+/*====================BG5 footer ================================*/
+
+.bg-05{
+    background-color:rgb(4, 43, 100); 
+    color: #fff;
+    margin-top: 130px;
+    padding-top: 50px;
+    float: right;
+   
+}
+    
+
+
+.bg-05 .container .content .footer-form{
+    position: relative;
+    background-color: #fff;
+    z-index: 99;
+    padding-bottom: 20px;
+    top: -120px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); 
+    border-radius: 3px;
+
+    
+}
+
+.bg-05 .container .footer-form .form-title {
+    padding: 20px;
+    background-color:rgb(4, 43, 100);
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+ 
+
+.bg-05 .container .footer-form  .form-body input{
+outline: none;
+margin-top: 10px;
+
+}
+
+
+.bg-05 .container .footer-form  .form-body textarea{
+
+    margin-top: 10px;
+
+}
+.bg-05 .container .footer-form  .form-body button{
+
+    margin-top: 10px;
+
+}
+/*.bg-05 .contenu .social-link{
+
+} */
+
+.bg-05 .contenu .social-link ul li{
+    display: inline-block;
+    text-decoration: none;
+   
+ }
+
+.bg-05 .contenu .social-link ul li a{
+    padding: 20px;
+    color: #fff;
+
+   
+ }
+
+
+ 
+ @media (max-width: 1005px) {
+    .bg-05 .container .content .footer-form{
+    
+        top: 0;
+        margin-bottom: 10px;
+    }
+
+    .bg-05{
+      
+        padding-top: 40px;
+     
+    }
+
+}
+
+
