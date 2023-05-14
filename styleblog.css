@@ -31,13 +31,14 @@ header{
     height: 50px;
    /* background-color: rgb(4, 43, 100); */
     background-color: #fff;
-  
+     position: relative;
     
 }
 .info ul{
     float: right;
     margin-right: 10px; 
-   
+    display: flex;
+
 
 }
 .info ul li{
